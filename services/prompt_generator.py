@@ -6,15 +6,11 @@ class PromptGenerator:
         self.client = client
 
     def generate_prompt(self):
-        prompt = (
-            "Generate one creative, original prompt to be used for generating an inspirational quote. "
-            "The prompt should describe a unique theme like courage, gratitude, resilience, etc."
-            " It should be concise, engaging, and suitable for a daily motivational quote. "
-        )
+        prompt = PROMPT_GENERATOR["base_prompt"]
         return self.client.generate_response(prompt, max_tokens=PROMPT_GENERATOR["generate_prompt_max_tokens"])
     
     def extract_keywords(self, prompt_text: str):
-        SKIP_KEYWORDS = {"quote", "theme", "image", "photo", "prompt", "inspired", "motivational", "inspiration", "inspire", "motivational", "inspirational", "daily", "quote", "quotes", "daily quote", "daily quotes"}
+        SKIP_KEYWORDS = PROMPT_GENERATOR["skip_keywords"]
         prompt = (
             "Extract keywords from the following prompt for image searching: "
             f"{prompt_text}. "

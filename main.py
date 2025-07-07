@@ -1,3 +1,5 @@
+# File: main.py
+from services.discord_service import DiscordService
 from services.image_generator import ImageGenerator
 from services.openai_service import OpenAIService
 from services.prompt_generator import PromptGenerator
@@ -16,6 +18,7 @@ def main():
     image_generator = ImageGenerator()
 
 
+
     prompt = prompt_generator.generate_prompt()
     print(f"Generated Prompt: {prompt}")
     quote = quote_generator.generate_quote(prompt)
@@ -25,9 +28,10 @@ def main():
     image_url, attribution = unsplash_service.fetch_random_image_url(keywords)
     print(f"Image URL: {image_url}")
     print(f"Attribution: {attribution}")
-    image_generator.quote_image(image_url, quote, output_path="output/quoteImg.jpg")
-    print("Image with Quote generated successfully.")
+    output_path = image_generator.quote_image(image_url, quote, output_path="output/quoteImg.jpg")
 
+    discord_client = DiscordService(output_path,attribution)
+    discord_client.run()
 
 
 if __name__ == "__main__":

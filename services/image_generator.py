@@ -50,7 +50,7 @@ class ImageGenerator:
         draw.text(text_position,wrapped_text,font=font,fill="white")
 
         #Middle Top Header
-        header_text = f"Daily Quote - {datetime.now().strftime('%B %d, %Y')}"
+        header_text = IMAGE_SERVICE["quote_header"].format(date=datetime.now().strftime(IMAGE_SERVICE["quote_date_format"]))
         header_font = ImageFont.truetype(self.fetch_font(IMAGE_SERVICE["header_path"]), IMAGE_SERVICE["header_size"])
         header_width = draw.textlength(header_text, font=header_font)
         header_position = ((width - header_width) // 2, IMAGE_SERVICE["margin"])
@@ -60,3 +60,5 @@ class ImageGenerator:
         os.makedirs(os.path.dirname(output_path),exist_ok=True)
         img.convert("RGB").save(output_path)
         print("Image Generated and saved")
+
+        return output_path
