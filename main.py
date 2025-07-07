@@ -6,9 +6,9 @@ from services.prompt_generator import PromptGenerator
 from services.quote_generator import QuoteGenerator
 from services.unsplash_service import UnsplashService
 
-# local Testing
-from dotenv import load_dotenv
-load_dotenv()
+# # local Testing
+# from dotenv import load_dotenv
+# load_dotenv()
 
 def main():
     client = OpenAIService()
