@@ -29,11 +29,11 @@ UNSPLASH_SERVICE = {
     "count": 1,
 }
 IMAGE_SERVICE = {
-    "font_path": "assets\\contentfont\\",
+    "font_path": "assets/contentfont/",
     "font_size": 40,
     "wrap_width": 40,
     "margin": 40,
-    "header_path": "assets\\headerfont\\",
+    "header_path": "assets/headerfont/",
     "header_size": 48,
     "quote_header": "Daily Quote  {date}",
     "quote_date_format": "%B %d, %Y",
