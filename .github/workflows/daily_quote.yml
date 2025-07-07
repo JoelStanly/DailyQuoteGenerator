@@ -1,4 +1,4 @@
-name: Daily Motivational Quote
+name: Daily Quote
 
 on:
   schedule:
