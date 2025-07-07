@@ -4,6 +4,7 @@ from config.settings import OPENAI_SERVICE
 
 class OpenAIService:
     def __init__(self):
+        print("OPENAI key starts with:", os.getenv("OPENAI_API_KEY")[:5])
         self.client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     def generate_response(self, prompt,max_tokens = 100):
