@@ -136,18 +136,17 @@ This project requires following dependencies
 
 3. **Set Up Environment Variables**
 
-Create a .env file in the root of the project and add your keys:
+    Create a .env file in the root of the project and add your keys:
 
-    ```
-    OPENAI_API_KEY=your_openai_key
-    UNSPLASH_ACCESS_KEY=your_unsplash_key
-    DISCORD_BOT_TOKEN=your_token
-    ```
-Enable dotenv in main.py
+        OPENAI_API_KEY=your_openai_key
+        UNSPLASH_ACCESS_KEY=your_unsplash_key
+        DISCORD_BOT_TOKEN=your_token
+    
+    Enable dotenv in main.py
 
-Make sure this line uncommented near the top of your main.py:
+    Make sure this line uncommented near the top of your main.py:
 
-![DotEnv Local Enable](./assets/demo/DotEnv.png)
+    ![DotEnv Local Enable](./assets/demo/DotEnv.png)
 
 If everything is set up properly, it will generate a daily quote image and optionally post it to Discord.
 
@@ -155,9 +154,9 @@ If everything is set up properly, it will generate a daily quote image and optio
 
 You can generate a quote image and post it to Discord by running:
 
-    ```bash
-    python main.py
-    ```
+```bash
+python main.py
+```
 
 #### Github Actions
 
@@ -228,7 +227,7 @@ You are free to use, modify, and distribute it as long as you include attributio
 
 
 <p align="center">
-  <img src="https://github.com/JoelStanly.png" width="120" style="border-radius: 50%;" />
+  <img src="https://avatars.githubusercontent.com/JoelStanly" width="100" alt="Joel Stanly" />
 </p>
 
 <p align="center">
