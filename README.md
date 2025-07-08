@@ -67,7 +67,7 @@ To add or remove fonts, simply place or delete font files within the `assets/hea
 
 Check out the video demo to see the bot in action:
 
-![Watch the Demo](./assets/demo/Demo.mp4)
+![Watch the Demo](./assets/demo/Demo.gif)
 
 _This demo shows how the bot generates quotes, selects relevant backgrounds, and posts it to Discord automatically._
 
