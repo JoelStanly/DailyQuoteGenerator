@@ -227,7 +227,7 @@ You are free to use, modify, and distribute it as long as you include attributio
 
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/JoelStanly" width="100" alt="Joel Stanly" />
+  <img src="https://avatars.githubusercontent.com/JoelStanly" width="150" alt="Joel Stanly" />
 </p>
 
 <p align="center">
